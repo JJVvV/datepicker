@@ -1,0 +1,37 @@
+//聊天表情 emotion
+
+.emotion{
+  position:absolute;
+  left:12px;
+  bottom:404px;
+  display:none;
+  z-index:$z-index-large;
+}
+
+.emotion-header{
+
+}
+.emotion-header-inner{
+
+}
+.emotion-header-item{
+
+}
+
+.emotion-bd-item{
+  width:435px;
+  &.normal{
+    background:$light-base url(/public/img/qqfacePanel27a55f.png) no-repeat;
+  }
+  >a{
+    float: left;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    text-indent: -999em;
+    border-bottom: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    cursor: pointer;
+  }
+}
+

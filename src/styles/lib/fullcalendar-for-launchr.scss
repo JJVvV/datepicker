@@ -1,0 +1,139 @@
+//change some fullcalendar styles for launchr
+
+.fc {
+  th {
+    border-color: $light-base;
+    padding: 7px 0;
+  }
+}
+
+.fc-unthemed .fc-widget-header, .fc-unthemed .fc-widget-content {
+  border-right-color: $light-base;
+}
+
+.fc-widget-content .fc-widget-content {
+  border-right-color: #ddd;
+  line-height: 1.1;
+}
+
+.meeting-filter-calendar .fc-time-grid-event.fc-short .fc-time:before {
+  content: '';
+}
+
+.meeting-filter-calendar .fc-time-grid-event.fc-short .fc-time:after {
+  content: '';
+}
+
+.fc-ltr .fc-time-grid .fc-event-container {
+  margin: 0;
+}
+
+.fc-time-grid-event .fc-time {
+  letter-spacing: -1px;
+}
+
+.occupied {
+  background-color: $gray-dark;
+  cursor: pointer;
+}
+
+.detail-postEvent {
+  border: 1px dashed $green-base;
+  color: $green-base !important;
+  cursor: pointer;
+  background-color: $light-base;
+}
+
+.detail-event {
+  border: 1px solid $green-base;
+  color: $light-base !important;
+  background-color: $green-base;
+  cursor: pointer;
+}
+
+.detail-cancel {
+  border: 1px dashed $gray-light;
+  color: $gray-light !important;
+  background-color: $gray-lighter;
+  cursor: pointer;
+}
+
+.detail-meeting {
+  border: 1px solid $blue-base;
+  background-color: $blue-base;
+  color: $light-base;
+  cursor: pointer;
+  &:hover {
+    color: $light-base;
+  }
+}
+
+//周视图样式修改
+.fc-agendaWeek-view {
+  .fc-axis {
+    border-right: 1px solid #ddd;
+    text-align: center;
+  }
+}
+
+.fc-agendaWeek-view .fc-slats tr:first-child {
+  opacity:0;
+}
+
+.meeting-box-body {
+  td.fc-axis.fc-time.fc-widget-content span {
+    //    display: inline-block;
+    position: relative;
+    top: 7px;
+    background: #fff;
+    text-align: center;
+    //  width: 33px;
+    //  padding: 0 4px;
+    width: 100%;
+    max-width: 47px;
+    display: block;
+  }
+
+}
+
+.calendar-body {
+  td.fc-axis.fc-time.fc-widget-content span {
+    position: absolute;
+    top: -19px;
+    background: #fff;
+    text-align: center;
+    height: 27px;
+    width: 100%;
+    max-width: 47px;
+    display: block;
+    padding-top: 10px;
+  }
+
+}
+
+.newmeeting-calendar-week + tr {
+  .fc-widget-header {
+    border: 1px solid #ddd;
+  }
+}
+
+//+more样式
+.fc-more {
+  color: $gray-dark;
+  &:hover {
+    color: $blue-base;
+    text-decoration: none !important;
+  }
+}
+.fc-header{border-bottom: 1px solid $gray-light;}
+
+span.fc-close.fc-icon.fc-icon-x {
+  display: inline-block;
+  margin-top: 6px !important;
+  color: $gray-dark !important;
+  &:hover{
+    color: $blue-base;
+  }
+}
+
+.fc-popover .fc-title{font-size: 12px;}

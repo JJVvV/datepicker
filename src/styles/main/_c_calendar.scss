@@ -1,0 +1,127 @@
+// .lau-calendar
+
+.calendar{
+
+.today{color: $blue-base}
+}
+.calendar-area .calendar-body{
+  margin-left:-1px;
+}
+.calendar-title{
+  padding:15px 18px;
+
+  .btn-group{
+    vertical-align:top;
+    margin-right:16px;
+  }
+
+  .dropdown{
+    margin-right:25px;
+  }
+
+}
+.calendar-user{
+  float:left;
+}
+.calendar-action{
+  float:right;
+}
+.calendar-user-change{
+  color:$blue-base;
+}
+.calendar-user-name{
+  margin: 7px 14px 0 7px;
+  font-size:16px;
+  display:inline-block;
+}
+
+.calendar-user-avator{
+  //@extend %avator;
+}
+
+.calendar-action-search{
+  @extend %icon-search;
+}
+
+.calendar-action-add{
+  //margin-right:25px;
+
+  i{
+    font-size:18px;
+  }
+}
+
+.calendar-change-time{
+  text-align:center;
+  time{
+    font-size:22px;
+    color:$blue-base;
+    margin:0 20px;
+    min-width: 122px;
+    text-align: center;
+    display: inline-block;
+  }
+  .next,
+  .prev{
+    font-size:30px;
+    vertical-align: -2px;
+    cursor:pointer;
+  }
+}
+
+
+.calendar-week-day{
+  border-top: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+  color: $gray-dark;
+}
+
+.calendar-body{
+  //margin:15px 5px;
+  display: block;
+}
+
+
+.calendar-right-time-box{
+  height: 280px;
+  width:145px;
+  border-left: 1px solid $gray-light;
+  padding:0 15px;
+  box-sizing: border-box;
+  .half-left-box{
+    width: 50%;
+    float: left;
+    display: inline-block;
+    &:first-child:before{
+      content: ":";
+      position: absolute;
+      font-size: 24px;
+      top: 109px;
+      right: 70px;
+    }
+    li{
+      cursor: pointer;
+      color: $gray-dark;
+      font-size: 14px;
+      margin: 17px 0;
+      text-align: center;
+      &:first-child{margin: 0;line-height: 1;    margin-bottom: -10px;  margin-top: 3px;}
+      &:last-child{margin: 0;line-height: 1;    margin-bottom: 3px;  margin-top: -10px;}
+      i{font-size: 30px;line-height: 1;cursor: pointer;}
+    }
+  }
+}
+
+input.input-box{
+  width: 43px;
+  text-align: center;
+  height: 28px;
+  font-size: 23px;
+  color: #0099ff;
+  padding: 0;
+  line-height: 28px;
+  margin: -7px 0;
+}
+
+.calendar .prev {&:hover{background-color: transparent !important; }i{font-size: 25px;color: $gray-dark;}}
+.calendar .prev +th+th{&:hover{background-color: transparent !important;}i{font-size: 25px;color: $gray-dark;}}

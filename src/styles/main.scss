@@ -1,0 +1,76 @@
+/*
+*
+* ./main 入口文件
+*
+*
+*/
+
+
+// $Variables and $Mixins
+@import "main/variables";
+@import "main-compass";
+@import "main/mixins";
+@import "main/extend";
+
+
+
+
+// $Reset and $Base
+@import "main/reset";
+
+// $layout
+@import "main/layout";
+
+// $Core CSS
+@import "main/c_button";
+@import "main/c_forms";
+
+
+
+// $Components
+//@import "main/_icon_simple";
+@import "main/icon_fontello";
+@import "main/c_bubble";
+@import "main/c_global_panel";
+@import "main/c_sub_panel";
+@import "main/c_thread_search";
+@import "main/c_thread_list";
+@import "main/c_chat_area";
+@import "main/c_emotion";
+@import "main/c_calendar_area";
+@import "main/c_calendar";
+@import "main/c_button_group";
+@import "main/c_approval_area";
+@import "main/c_slider";
+@import "main/c_calendar_createMeeting"; //包含右侧弹出层的所有样式
+@import "main/c_calendar_reason";
+@import "main/c_calendar_place";//会议地点小模块
+@import "main/c_more_detail";//
+@import "main/c_dropdown";  //下拉小方块
+@import "main/c_approval_submit";//审批通过和转交小弹出框
+@import "main/c_chat_area_box"; //页面中部显示审批、任务、和日程消息样式
+@import "main/c_task_tag"; //  任务页面的标签模块
+@import "main/c_scrollable"; //聊天滚动条样式
+@import "main/c_choose_people_box";//选人控件弹出框
+@import "main/c_tree";
+@import "main/c_flower"; //菊花
+//@import "main/c_approval_message_box";//日程、审批、任务消息框样式
+@import "main/c_register_area"; //注册登录样式
+// $animation
+@import "main/animation";
+// $fullcalendar
+@import "lib/fullcalendar";
+@import "lib/fullcalendar-for-launchr";
+
+//webuploader
+@import "lib/webuploader";
+
+// $pikaday
+//@import "lib/pikaday";
+@import "lib/daterangepicker";
+//@import "lib/bootstrap";
+// $state
+@import "main/state";
+
+// $test
+@import "test";

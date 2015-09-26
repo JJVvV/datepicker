@@ -1,0 +1,22 @@
+//存放布局
+html{
+  //overflow-x:hidden;
+  overflow:hidden;
+}
+html, body, #wrapper, .container, .page-container{
+  height:100%;
+}
+.container{
+  position:relative;
+  min-height: $global-min-height;
+  min-width:880px;
+}
+
+#wrapper{
+  font-size:$font-size-base;
+}
+
+
+.global-detail-area{
+  @extend %area;
+}

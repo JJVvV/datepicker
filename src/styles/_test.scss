@@ -1,0 +1,46 @@
+//body{
+//  height:2000px;
+//}
+//
+//
+//.sub-panel, .chat-area{
+//  height:1000px;
+//}
+//
+//.chat-content{
+//  margin-top:207px;
+//}
+//
+//.chat-send{
+//  bottom:auto;
+//  top:623px;
+//}
+
+//.chat-content{
+//  height:600px;
+//  overflow: auto;
+//}
+
+
+.rc-tree-checkbox{
+  width:10px;height:10px;display:inline-block;
+  background:$gray-light;
+}
+.rc-tree-checkbox-checked{
+  background:$blue-base;
+}
+
+.rc-tree-child-tree{
+  margin-left:20px;
+  display:none;
+}
+
+.rc-tree-switcher{
+  width:10px;height:10px;display:inline-block;
+  background: slategray;
+  margin-right:5px;
+}
+
+.rc-tree-child-tree-open{
+  display:block;
+}

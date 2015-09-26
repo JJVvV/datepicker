@@ -1,0 +1,69 @@
+.launchr-tree{
+  height: calc(100% - 73px);
+  box-sizing: border-box;
+  overflow: auto;
+//  margin-left: -20px;
+  span {
+    background-color: $gray-lighter;
+  }
+  li {
+    margin-left: 20px;
+  }
+  .dashed-line {
+    margin: 18px auto;
+    height: 1px;
+    border-bottom: 1px dashed $gray-light;
+  }
+  i {
+    font-size: 20px;
+  }
+  .title {
+    color: $gray-dark;
+    background-color: $gray-lighter;
+    position: relative;
+    top: -15px;
+    font-weight: 100;
+    cursor: pointer;
+  }
+  .title-check-box {
+    display: inline-block;
+    width: 13px !important;
+    position: relative;
+    top: -6px;
+
+  }
+}
+
+
+
+.treeview-user{
+
+    img {
+      margin-right: 5px;
+      border-radius: 3px;
+      vertical-align: middle;
+      margin-bottom: 12px;
+    }
+
+  .treeview-user-check{
+    display: inline-block;
+    width: 13px !important;
+    position: relative;
+    top: 15px;
+  }
+}
+
+.treeview-item{
+  //height: 15px;
+}
+
+.treeview-children{
+  &.collapsed{
+    height:0;
+    overflow:hidden;
+  }
+}
+
+.treeview-children{
+  margin-left:20px;
+}

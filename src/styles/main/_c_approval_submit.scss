@@ -1,0 +1,88 @@
+.approval-submit-box {
+  width: 300px;
+  border-radius: 5px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  box-shadow: 0 0 5px $gray-dark;
+  overflow: hidden;
+  position: relative;
+  textarea {
+    height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  input{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .head {
+    padding: 0 25px;
+  }
+}
+
+.task-member-group{margin-top: 18px;
+  overflow: hidden;
+  span {
+    display: inline-block;
+    width: 25%;
+    float: left !important;
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+.approval-member-group {
+  margin-bottom: 18px;
+  overflow: hidden;
+  span {
+    display: inline-block;
+    width: 25%;
+    float: left !important;
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+.approval-submit-btn-group {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  .button {
+    float: left;
+    width: 50%;
+    padding: 7px 0;
+    border-bottom: 2px solid $gray-dark;
+    cursor: pointer;
+  }
+  .cancle {
+    background-color: $gray-light;
+  }
+  .comfirm-pass {
+    background-color: $blue-base;
+    color: $light-base;
+    &:hover {
+      background: rgba(0, 153, 255, 0.8);
+    }
+  }
+  .comfirm-reject {
+    background-color: $red-base;
+    color: $light-base;
+    &:hover {
+      background: rgba(255, 51, 102, 0.8);
+      color: #fff;
+    }
+  }
+}
+
+.submit-box-alert{text-align: center;margin: 30px 0;}
+
+//----------新建审批的转换按钮------------------------
+.approval-switch-day{
+  margin: 0;
+  i{cursor: pointer;}
+  i.icon-toggle-on{color: $blue-base;}
+  i.icon-toggle-off{color: $gray-dark;}
+  span{margin: 0;}
+}

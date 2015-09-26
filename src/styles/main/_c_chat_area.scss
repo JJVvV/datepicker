@@ -1,0 +1,37 @@
+// chat-area
+
+
+.chat-area{
+  //@extend %area;
+  //max-width:$chat-area-max-width;
+
+  @extend %half-detail-area;
+}
+
+.chat-title{
+  cursor:pointer;
+  text-align:center;
+  @extend %detail-area-title;
+}
+
+
+
+.chat-content{
+  height: 600px;
+  overflow: auto;
+  padding:5px 20px;
+}
+
+.right-panel{
+  float:right;
+  height: 100%;
+  width: 650px;
+  @media(max-width: 1600px){
+    width: 500px;
+  }
+}
+
+@import "c_chat_room";
+@import "c_chat_messages";
+@import "c_chat_send";
+@import "c_chat_message_record";

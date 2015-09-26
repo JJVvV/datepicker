@@ -1,0 +1,50 @@
+//下拉事件、会议
+
+.slide-box{
+  font-size: 12px;
+  width: 80px;
+  height: 75px;
+  border-radius: 3px;
+  box-shadow:0 0 10px $gray-dark;
+  position: relative;
+
+  .back-trangle{
+//    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    box-shadow: 2px 2px 3px $gray-light;
+    transform: rotate(-136deg);
+    z-index: -1;
+    left: 35px;
+    top: -4px;
+    background: #fff;
+    z-index: 5;
+  }
+
+  .partingLine{border-bottom: 1px solid $gray-light!important;}
+  .slide-line{
+    padding:8px 20px;
+    %circle{
+      width: 7px;
+      height: 7px;
+      margin-left: 2px;
+      margin-right: 2px;
+      display: inline-block;
+      padding: 0;
+    }
+    .circle-event{
+      @extend %circle-tip;
+      @extend %circle;
+      background-color: $green-base;
+
+    }
+    .circle-meeting{
+      @extend %circle-tip;
+      @extend %circle;
+      background-color: $blue-base;
+    }
+  }
+}

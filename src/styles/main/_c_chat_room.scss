@@ -1,0 +1,80 @@
+.chat-room {
+  position: absolute;
+  top: 71px;
+  left: 0;
+  width: 100%;
+  z-index: $z-index-base;
+  border-bottom:1px solid $gray-light;
+  background:$light-base;
+}
+.chat-room-inner{
+  padding: 24px;
+}
+.chat-room-search{
+  input{
+    border-radius:3px;
+    border:1px solid $gray-light;
+    vertical-align: top;
+    outline:none;
+    padding:0 10px;
+    line-height:38px;
+    width:206px;
+  }
+}
+
+.chat-room-members{
+  margin-top:18px;
+}
+$chat-room-member-width:40px;//原来是47px
+$chat-room-member-smallwidth:40px;
+
+.chat-room-member{
+  .circle{
+    color:$red-base;
+    cursor:pointer;
+    font-size:16px;
+    position:absolute;
+    right:-6px;top:-6px;
+    visibility:hidden;
+  }
+  &:hover .circle{
+    visibility: visible;
+  }
+}
+.chat-room-members-add{
+  width:$chat-room-member-width - 2px;height:$chat-room-member-width - 2px;
+  @include border($gray-dark);
+
+  font-size:28px;
+  text-align:center;
+  line-height:$chat-room-member-width - 2px;
+  cursor:pointer;
+  color:$gray-dark;
+}
+
+.chat-room-members-add {
+  width: 40px;
+  height: 40px;
+}
+
+.chat-room-members-add, .chat-room-member{
+  position: relative;
+  float:left;
+  margin-right:10px;
+  margin-bottom:10px;
+  width:$chat-room-member-width;height:$chat-room-member-width;
+  @include border-radius($border-radius-small);
+  img{border-radius: 3px;}
+}
+.layout-approval-member{display: inline-block;width: 75%;margin-bottom: -10px;}
+
+//小号的聊天头像
+.chat-room-member-small{
+  position: relative;
+  float:left;
+  margin-right:10px;
+  width:$chat-room-member-smallwidth;height:$chat-room-member-smallwidth;
+  @include border-radius($border-radius-small);
+  i.icon-glyph-136{font-size: 40px;color: $gray-light;}  //审批里面的箭头（i标签）
+}
+

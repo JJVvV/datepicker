@@ -1,0 +1,87 @@
+//下拉详情弹出框
+.pull-right{float: right;}
+
+.detail-box{
+//  color: $green-base;
+  font-size: 12px;
+  width: 220px;
+  height: 220px;
+  border-radius: 3px;
+  box-shadow:0 0 10px $gray-dark;
+}
+
+.detail-header{padding: 3px 10px;border-bottom: 1px solid #ddd;}
+
+.detail-body{padding: 5px 10px;
+  height: 173px;
+  overflow: auto;
+
+}
+
+.important-line{border-left:5px solid $orange-base!important; }
+.emergency-line{border-left:5px solid $red-base; }
+.important-line-thin{border-left:3px solid $orange-base!important; }
+.emergency-line-thin{border-left:3px solid $red-base; }
+.medium-line{& :before{content: "";height: 40px;width:4px;position: absolute;left: 0px;background-color: $orange-base;}}
+.height-line{& :before{content: "";height: 40px;width:4px;position: absolute;left: 0px;background-color: $red-base;}}
+
+.fc-month-view .event-group{  margin-bottom: 4px;}
+.fc-agendaWeek-view .event-group .reason{vertical-align: top !important;}
+.fc-agendaWeek-view .event-group .time{margin:0 !important;}
+.event-group{padding: 0 5px;
+  display: block;
+  line-height: 1.2;
+  .reason{
+     display: inline-block;
+     width: 60%;
+    font-size: 12px;
+    line-height: 1;
+     @extend %ellipsis;
+   }
+  .time{
+    @extend %ellipsis;
+    display: inline-block;
+    width: 39%;
+    line-height: 1;
+    margin-top: 2px;
+    text-align: right;
+    font-size: 12px;
+  }
+}
+
+.detail-postEvent{
+  border: 1px dashed $green-base;
+  color: $green-base!important;
+  cursor: pointer;
+  background-color: $light-base;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.detail-event{
+  border: 1px solid $green-base;
+  color: $light-base!important;
+  background-color: $green-base;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.detail-cancel{
+  border: 1px dashed $gray-light;
+  color: $gray-light!important;
+  background-color: $gray-lighter;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right:3px;
+}
+
+.detail-meeting{
+  border: 1px solid $blue-base;
+  background-color: $blue-base;
+  color: $light-base;
+  cursor: pointer;
+  &:hover{color: $light-base;}
+  margin-left: 3px;
+  margin-right: 3px;
+}

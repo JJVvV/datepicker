@@ -1,0 +1,134 @@
+.choose-people-box {
+  position: relative;
+  width: 600px;
+  height: 550px; //等做完了再删掉
+  background-color: $light-base;
+  box-shadow: 0 0 40px $gray-dark;
+  font-size: 14px;
+  border-radius: 5px;
+  overflow: hidden;
+  .half-box {
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    &:first-child {
+      background-color: $gray-lighter;
+      padding: 20px 15px;
+    }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.select-list-group {
+  height: calc(100% - 73px);
+  box-sizing: border-box;
+  overflow: auto;
+  margin-left: -20px;
+  span {
+    background-color: $gray-lighter;
+  }
+  li {
+    margin-left: 20px;
+  }
+  .dashed-line {
+    margin: 18px auto;
+    height: 1px;
+    border-bottom: 1px dashed $gray-light;
+  }
+  i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .title {
+    color: $gray-dark;
+    background-color: $gray-lighter;
+    position: relative;
+    top: -15px;
+  }
+  .title-check-box {
+    display: inline-block;
+    width: 13px !important;
+    position: relative;
+    top: -6px;
+
+  }
+}
+
+.select-name-group {
+  @extend .select-list-group;
+  margin: 0;
+  padding-top: 15px;
+  .letter{font-size: 16px;color: $gray-dark;line-height: 1;}
+}
+
+.select-member-group {
+  img {
+    margin-right: 5px;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-bottom: 12px;
+  }
+  .member-check-box {
+    display: inline-block;
+    width: 13px !important;
+    position: relative;
+    top: 15px;
+  }
+}
+
+.select-title-group {
+  height: 15px;
+}
+
+.select-num-title {
+  padding-bottom: 5px;
+  margin-bottom: 13px;
+  span {
+    color: $gray-darker;
+  }
+  i {
+    font-size: 20px;
+    color: $gray-dark;
+    cursor: pointer;
+  }
+}
+
+.person-group {
+  line-height: 1.2;
+  position: relative;
+  margin: 15px 0;
+  img {
+    margin-right: 5px;
+    border-radius: 3px;
+  }
+  .team-name {
+    color: $gray-dark;
+    font-size: 12px;
+  }
+  i.icon-glyph-194 {
+    color: $gray-dark;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    &:hover {
+      color: $red-base;
+    }
+  }
+}
+
+.person-group-detail {
+  display: inline-block;
+  width: calc(100% - 60px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.select-name-input{position: absolute;right: 0;width: 13px !important;top:6px;}
+

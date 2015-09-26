@@ -1,0 +1,146 @@
+.chat-message-record-title {
+  ul {
+    border-bottom: solid 1px $gray-light;
+    height: 56px;
+  }
+  li {
+    float: left;
+    padding: 15px 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    &.active {
+      border-bottom: solid 2px $blue-base
+    }
+  }
+}
+
+.chat-message-record-menu {
+  ul {
+    border-bottom: solid 1px $gray-light;
+    height: 35px;
+    margin: 15px 15px;
+  }
+  li {
+    float: left;
+    padding: 5px 22px;
+    cursor: pointer;
+    &.active {
+      border: solid 1px $gray-light;
+      background-color: $light-base;
+      border-bottom: none;
+      color: $blue-base;
+    }
+  }
+}
+
+.chat-message-record-panel {
+  li{
+    cursor: pointer;
+  }
+  li.record-msg {
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: dashed 1px $gray-light;
+    .icon-jump{
+      display: none;
+      margin-left: 17px;
+    }
+
+    &:hover .icon-jump,.record-opearation{
+      display: inline-block;
+    }
+  }
+  li.record-image {
+    float: left;
+    position: relative;
+    &:hover .record-image-info{
+      display: block;
+    }
+
+    .record-image-info {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: none;
+      width: 100%;
+      background-color:$gray-darker;
+      color: $light-base;
+    }
+    .record-image-time {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .record-avatar {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+  }
+  .record-clearfix {
+    clear: both;
+  }
+  .record-detail {
+    margin-left: 50px;
+    line-height: 20px;
+    & .right-tips {
+      float: right;
+      &::after {
+        clear: both;
+      }
+    }
+  }
+
+  .audio-message {
+    width: 100px;
+    background-color: $blue-base;
+    position: relative;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: $light-base;
+    .audio-length {
+      position: absolute;
+      right: 2px;
+    }
+
+    .icon-star{
+      position: absolute;
+      color: $orange-base;
+      right: -16px;
+      top: 3px;
+    }
+    .icon-jump{
+      position: absolute;
+      right: -33px;
+      top: 3px;
+      color: $gray-base;
+    }
+  }
+  .text-message{
+    position: relative;
+    .emoji{
+      width: 16px;
+      height: 16px;
+    }
+    .icon-star{
+      position: absolute;
+      color: $orange-base;
+      top: 2px;
+    }
+  }
+  .image-message{
+    position: relative;
+    .icon-star{
+      position: absolute;
+      color: $orange-base;
+      left: 57px;
+      top: 12px;
+    }
+    .icon-jump{
+      position: absolute;
+      left: 57px;
+      top: 12px;
+    }
+  }
+}

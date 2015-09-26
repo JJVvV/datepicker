@@ -1,0 +1,74 @@
+//聊天部分
+
+.chat-message{
+  margin:18px auto 14px;
+}
+.chat-message-time{
+  margin:18px auto 14px;
+  width:160px;
+  height:1px;
+  text-align:center;
+  border-bottom:1px solid $gray-dark;
+
+  time{
+    color:$gray-dark;
+    font-size:$font-size-small;
+    background-color: $light-base;
+    position: relative;
+    top: -12px;
+    padding: 0 5px;
+  }
+
+  //time{
+  //  font-size:$font-size-small;
+  //  display:inline-block;
+  //  border-radius:$border-radius-small;
+  //  background:$gray-light;
+  //  padding:0 12px;
+  //  color:$light-base;
+  //}
+}
+
+.chat-message-avator{
+  border-radius:$border-radius-small;
+
+  .chat-message.me &{
+    float:right;
+  }
+  .chat-message.you &{
+    float:left;
+  }
+
+}
+.chat-message-content{
+  overflow:hidden;
+  .chat-message.me &{
+    text-align:right;
+    .bubble{
+      margin-right:10px;
+    }
+  }
+  .chat-message.you &{
+    .bubble{
+      margin-left:10px;
+    }
+  }
+
+}
+
+.chat-message-name{
+  margin-left: 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.chat-message-sendTime{
+  padding: 5px 25px 0 12px;
+  font-size: 12px;
+}
+
+.chat-show-more-history{
+  text-align: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color:$blue-base;
+}

@@ -1,0 +1,82 @@
+.global-panel{
+  @include panel($global-panel-width-base);
+  @media (min-width:$media-middle-width){
+    width:$global-panel-width;
+  }
+  text-align:center;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:$z-index-base;
+  box-shadow:1px 0 3px rgba(0, 0, 0, 0.1);
+
+}
+
+%border-bottom{
+  border-bottom:1px solid $gray-light;
+}
+
+.global-panel-item{
+
+  display:block;
+  padding-top:19px;
+  padding-bottom:13px;
+  font-size:38px;
+  text-decoration: none;
+
+  @extend %border-bottom;
+  position:relative;
+
+
+  &.icon-chat:hover,
+  &.icon-chat.active{
+    color:$blue-base;
+    &:before{
+      content:"\e888";
+    }
+  }
+  &.icon-contacts:hover,
+  &.icon-contacts.active{
+    color:$blue-base;
+    &:before{
+      content:"\e88a";
+    }
+  }
+  &.icon-app:hover,
+  &.icon-app.active{
+    color:$blue-base;
+    &:before{
+      content:"\e886";
+    }
+  }
+
+  .circle-tip{
+    font-family: $font-family;
+    font-size:$font-size-small;
+    position:absolute;
+    left: 53px;
+    top: 14px;
+
+  }
+}
+.circle-tip{
+  @extend %circle-tip;
+}
+.global-panel-logo{
+  height:100px;
+  @extend %border-bottom;
+}
+
+
+//底部退出按钮
+.global-panel-exit{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  cursor: pointer;
+}
+
+
+

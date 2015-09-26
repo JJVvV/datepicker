@@ -1,0 +1,35 @@
+.flower{
+  width:100px;
+  height:46px;
+  padding: 10px 15px 10px;
+  opacity: 0.6;
+  position:relative;
+  display:inline-block;
+  box-sizing: border-box;
+  z-index:99;
+  &:before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    border: solid 2px #aaa;
+    position: absolute;
+    left: 50%;
+    margin-left: -45px;
+    border-radius: 20%;
+    -webkit-animation: jconfirm-rotate 1s infinite;
+    animation: jconfirm-rotate 1s infinite;
+  }
+
+  &:after{
+    content: 'loading..';
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+  }
+
+  &.hide{
+    transition:opacity 1s;
+    opacity:0;
+  }
+}
+

@@ -1,0 +1,37 @@
+.meeting-place{  //最外层的盒子
+  box-shadow:0 0 10px $gray-dark;  //添加边界便于观查
+  width: 550px;
+  padding: 20px 12px;
+}
+
+
+.meeting-place-nav{
+  .nav-box-item{
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding: 0 15px 5px;
+    margin-bottom: 0px;
+    color:  $input-border-color;
+    cursor: pointer;
+    &:hover{
+      border-bottom: 2px solid #0099ff;
+      color: $gray-base;
+    }
+  }
+  .active{
+
+    border-bottom: 2px solid #0099ff;
+    color: $gray-base;
+
+  }
+
+}
+
+.place-input{display: inline;
+  vertical-align: middle;
+  float: left;
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+  width: 100%;
+}
+

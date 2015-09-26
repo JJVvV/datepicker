@@ -1,0 +1,324 @@
+.form-c {
+  display: inline-block;
+  font-size: $font-size-base;
+  //line-height: get-line-height($input-height-base, 1px);
+  line-height:$line-height-base;
+  color: $input-color;
+  background-color: $input-bg;
+  background-image: none;
+  border: 1px solid $input-border-color;
+  border-radius: $input-border-radius;
+  outline: 0;
+  padding:get-input-padding($input-height-base, $line-height-base, $font-size-base);
+  width:100%;
+  box-sizing:border-box;
+  @include form-c-focus-hover;
+
+
+  // Placeholder
+  @include placeholder;
+
+
+  &[type="search"]{
+    -webkit-appearance: none;
+  }
+
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: $input-bg-disabled;
+    opacity: 1;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
+
+
+.form-feedback{
+  @include feedback($input-height-base);
+  //@extend %feedback-wrapper;
+  display:inline-block;
+  position:relative;
+  .form-c{
+    display:block;
+  }
+
+  .feedback{
+    //@extend %feedback;
+    text-align:center;
+    position:absolute;
+    top:0;
+
+    width:30px;
+  }
+  &.left{
+    .form-c{
+      padding-left:30px;
+    }
+    .feedback{
+      left:0;
+      padding-left:3px;
+      color: $gray-dark;
+    }
+  }
+
+  &.left-item{ //除去search，包括address calendar
+    width: 100%;
+    .form-c{
+      width: 100%;
+      padding-left:50px;
+      &:hover +.feedback{
+        border-color:$gray-darker ;
+      }
+      &:focus +.feedback{
+        border-color: $blue-base;
+      }
+    }
+    .feedback{
+      left: 0;
+      padding: 0 5px;
+      color: $gray-dark;
+      border-right: 1px solid $gray-light;
+      font-size: 22px;
+    }
+  }
+
+  &.right-item{ //除去search，包括address calendar
+    width: 100%;
+    .form-c{
+      width: 100%;
+      padding-right:50px;
+      &:hover +.feedback{
+        border-color:$gray-darker ;
+      }
+      &:focus +.feedback{
+        border-color: $blue-base;
+      }
+    }
+    .feedback{
+      right: 0;
+      padding: 0 5px;
+      color: $gray-dark;
+      border-left: 1px solid $gray-light;
+      font-size: 22px;
+    }
+  }
+
+
+  &.both-item{ //除去search，包括address calendar
+    width: 100%;
+    .form-c{
+      width: 100%;
+      padding-left:50px;
+      padding-right: 95px;
+      &:hover +.feedback-icon{
+        border-color:$gray-darker ;
+      }
+      &:focus +.feedback-icon{
+        border-color: $blue-base;
+      }
+      &:hover +.feedback-icon+.feedback-comment{
+        border-color:$gray-darker ;
+      }
+      &:focus +.feedback-icon+.feedback-comment{
+        border-color:$blue-base ;
+      }
+    }
+    .feedback-icon{
+     i{color: $gray-dark;}
+      left: 0;
+      padding: 0 5px;
+      color: $gray-dark;
+      border-right: 1px solid $gray-light;
+      font-size: 22px;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      width: 30px;
+      height: 40px;
+      line-height: 40px;
+    }
+    .feedback-comment{
+        cursor: pointer;
+        right: 0;
+        padding: 0 28px;
+        font-size: 14px;
+
+
+        text-align: center;
+        position: absolute;
+        top: 0;
+        height: 38px;
+        line-height: 38px;
+        color: $gray-darker;
+        background-color: $gray-lighter;
+        border: 1px solid $gray-light;
+        border-radius: 0 5px 5px 0;
+    }
+  }
+
+
+
+
+
+  &.right{
+    .form-c{
+      padding-right:30px;
+    }
+    .feedback{
+      //right:0;
+      //padding-right:3px;
+    }
+  }
+  &.error{
+    .feedback{
+      color:$red-base;
+    }
+  }
+  &.success{
+    .feedback{
+      color:$green-base;
+    }
+  }
+}
+
+
+
+//.form-search
+//{
+//  @include search;
+//}
+//.form-search .form-c{
+//  @include border-radius(20px);
+//}
+
+select.form-c{padding: 8px 10px;}
+
+
+
+
+.comment{
+  .attach-btn{
+    line-height:38px;
+  }
+  .input-group{
+    &:hover{
+      z-index: $z-index-base;
+    }
+
+  }
+  //.form-c{
+  //  border-top-left-radius:0;
+  //  border-bottom-left-radius:0;
+  //}
+
+  .form-feedback{
+    @include feedback($input-height-base);
+
+    //@extend %feedback-wrapper;
+    display:table;
+    position:relative;
+    border-collapse: separate;
+    .form-c{
+      width:100%;
+      border-right-color:$gray-light !important;
+      padding-right:0;
+      border-top-left-radius:0;
+      border-bottom-left-radius:0;
+    }
+
+    .feedback{
+      width: 1%;
+      background: $gray-light;
+      padding: 0 30px;
+      cursor:pointer;
+      border: 1px solid  $gray-light;
+      height:auto;
+      line-height:normal;
+      position:static;
+    }
+    .form-c, .feedback{
+      display:table-cell;
+
+      white-space: nowrap;
+      vertical-align: middle;
+
+
+    }
+  }
+
+  .input-group .form-c:first-child{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .input-group .form-c:not(:first-child){
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+
+  }
+  .input-group .form-c:not(:last-child){
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+
+  }
+  .input-group .feedback:last-child{
+    border-top-right-radius:$border-radius-base;
+    border-bottom-right-radius:$border-radius-base;
+    border-left:0;
+  }
+
+  .input-group{
+    &:hover{
+      .feedback{
+        border-color: $gray-dark;
+      }
+      .form-c:focus + .feedback{
+        border-color: $blue-base;
+      }
+    }
+    .form-c:focus + .feedback{
+      border-color: $blue-base;
+    }
+
+
+  }
+
+
+
+
+
+}
+
+.comment-btn{
+  color:$gray-darker;
+}
+.attach-btn{
+  cursor:pointer;
+  float:left;
+  width:40px;
+  text-align:center;
+  border:1px solid $gray-light;
+
+  position:relative;
+  &:hover{
+    border-color:$gray-dark;
+    z-index:$z-index-base;
+  }
+
+  & + .input-group {
+    .form-feedback{
+      margin-left:-1px;
+    }
+
+
+  }
+  //&:hover + .input-group{
+  //  .form-c{
+  //    border-left-color:$gray-light;
+  //  }
+  //}
+}
+

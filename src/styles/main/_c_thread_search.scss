@@ -1,0 +1,47 @@
+// work-searck
+
+//.work-search{
+//  border-radius:15px;
+//  border:1px solid $gray-light;
+//  height:$work-search-height;
+//  width:218px;
+//  background:$light-base;
+//  color: $gray-light;
+//}
+
+//.work-search-input{
+//  border:0;
+//  outline:none;
+//  height:$work-search-height;
+//  vertical-align:top;
+//}
+//.work-search-magnifier{
+//  display: inline-block;
+//  text-align:center;
+//  line-height: $work-search-height !important;
+//  width:20px;
+//  padding-left:11px;
+//  font-size:18px;
+//}
+//
+.sub-panel-header .btn-add{
+  float:right;
+  font-size:30px;
+  line-height:$work-search-height - 2px;
+  cursor:pointer;
+  color:$gray-dark;
+}
+
+//
+
+.work-search{
+  width:80%;
+  @include feedback(34px);
+  .form-c{
+    @include border-radius($border-radius-large);
+    width:100%;
+  }
+  .feedback{
+    color:$gray-light;
+  }
+}

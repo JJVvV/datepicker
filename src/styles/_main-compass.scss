@@ -1,0 +1,28 @@
+//获得字体路径
+@function twbs-font-path($path, $name) {
+  @return "";
+}
+
+//获取按钮padding
+@function get-btn-padding($height, $font-size, $line-height, $border:1px){
+  @warn "#{ round(($height - $font-size * $line-height - $border*2)/2)},#{$height}, #{$font-size}, #{$line-height}, #{$border}";
+  @return round(($height - $font-size * $line-height - $border*2)/2);
+}
+
+//获取高度 input button
+@function get-height($height, $padding-top, $border){
+  @return $height - ($padding-top + $border)*2
+}
+
+//获取line-height
+@function get-line-height($height, $border:1px){
+  @return $height - $border*2;
+}
+
+
+
+//获取form-c padding
+@function get-input-padding($height, $line-height, $font-size, $padding-left:12px){
+  @warn ($height - $line-height*$font-size - 1)/2;
+  @return floor($height - $line-height*$font-size - 1)/2 $padding-left
+}

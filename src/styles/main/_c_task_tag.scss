@@ -1,0 +1,85 @@
+//  任务页面的标签模块
+.task-tag-box {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.task-tag {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+
+  span {
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  &:hover .task-tag-group {
+    background-color: $blue-base;
+    border-color: $blue-base;
+    color: $light-base;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    z-index: 5;
+    position: relative;
+    span.pull-right{color: $light-base;}
+
+  }
+  &:hover  .task-tag-edit {
+    opacity: 1;
+  }
+}
+
+.task-tag-group{
+  border-radius: 3px;
+  border: 1px solid $gray-light;
+  padding: 0 8px;
+  cursor: pointer;
+  background-color: $light-base;
+
+  span.pull-right{
+    color: $gray-dark;
+  }
+
+  &:hover {
+    background-color: $blue-base;
+    border-color: $blue-base;
+    color: $light-base;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    z-index: 5;
+    span.pull-right{color: $light-base;}
+  }
+
+}
+
+.task-tag-edit {
+  color: $light-base;
+  background-color: $gray-darker;
+  position: absolute;
+  padding: 0 8px;
+  right: -45px;
+  border-radius: 3px;
+  z-index: 1;
+  border: 1px solid $gray-darker;
+  opacity: 0;
+  top: 0;
+  &:hover{opacity: 1;}
+  i{    cursor: pointer;
+    line-height: 1.8;
+    padding-left: 5px;
+  }
+}
+
+
+.subtask-tips{
+  position:relative;
+}

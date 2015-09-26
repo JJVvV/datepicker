@@ -1,0 +1,92 @@
+@mixin placeholder($color: $input-placeholder-color) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder { color: $color; }
+  &::-webkit-input-placeholder  { color: $color; }
+}
+
+@mixin form-c-hover($border-color, $color) {
+  &:hover {
+    border-color: $border-color;
+    color:$color;
+  }
+}
+
+@mixin form-c-focus-hover {
+  &:hover{
+    border-color:$gray-dark;
+  }
+  &:focus{
+   border-color: $blue-base;
+  }
+
+  &.error,
+  &.error:focus,
+  &.error:hover,
+  .form-feedback.error &
+  {
+    border-color: $red-base;
+    color:$red-base;
+  }
+
+  &.success,
+  &.success:focus,
+  &.success.hover,
+  .form-feedback.success &
+  {
+    border-color: $green-base;
+    color:$green-base;
+  }
+}
+
+
+%feedback{
+  height:$input-height-base;
+  line-height:$input-height-base;
+
+  text-align:center;
+  position:absolute;
+  top:0;
+}
+%feedback-wrapper{
+  display:inline-block;
+  position:relative;
+}
+
+@mixin feedback($height){
+  .feedback{
+    //@extend %feedback;
+    height:$height;
+    //line-height:$height;
+
+  }
+  .form-c{
+    padding: get-input-padding($height, $line-height-base, $font-size-base)
+    //line-height: get-line-height($height);
+  }
+}
+
+//@mixin search(){
+//  //@extend %feedback-wrapper;
+//  display:inline-block;
+//  position:relative;
+//  .form-c{
+//    display:block;
+//    padding-left:35px;
+//  }
+//  .search{
+//    //@extend %feedback;
+//    height:$input-height-base;
+//    line-height:$input-height-base;
+//
+//    text-align:center;
+//    position:absolute;
+//    top:0;
+//    width:40px;
+//    left:0;
+//    padding-left:3px;
+//  }
+//}

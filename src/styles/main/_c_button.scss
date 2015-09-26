@@ -1,0 +1,101 @@
+
+.btn{
+
+
+  display: inline-block;
+  margin-bottom: 0; // For input.btn
+  font-weight: $btn-font-weight;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; //修复Firefox android bug
+  border: 1px solid transparent;
+  white-space: nowrap;
+  user-select:none;
+  //line-height:$line-height-base;
+  //@include button-size($btn-default-height, $btn-default-font, $line-height-base,$btn-default-padding-left, $border-radius-base);
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      @include tab-focus;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+
+}
+
+.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border, $light-base, $blue-base);
+}
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border, $light-base, $blue-base);
+}
+// Success appears as green
+.btn-success {
+  @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border, $light-base, $green-base);
+}
+// Info appears as blue-green
+.btn-info {
+  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border, $light-base, $blue-base);
+}
+
+// Warning appears as orange
+.btn-warning {
+  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border, $light-base, $red-base);
+}
+// Danger and error appear as red
+.btn-danger {
+  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border, $light-base, $red-base);
+}
+
+//btn-mini
+.btn-mi{
+  @include button-size($btn-mi-height, $btn-mi-font,$line-height-base, $btn-mi-padding-left, $btn-border-radius-small);
+}
+
+
+
+//btn-default
+.btn-default {
+  @include button-size($btn-default-height, $btn-default-font,$line-height-base, $btn-default-padding-left, $btn-border-radius-small);
+}
+//btn-small
+.btn-sm {
+  @include button-size($btn-sm-height, $btn-sm-font,$line-height-base, $btn-sm-padding-left, $btn-border-radius-small);
+
+}
+
+.btn-lg {
+  @include button-size($btn-lg-height, $btn-lg-font,$line-height-base, $btn-lg-padding-left, $btn-border-radius-base);
+
+}
+
+//按钮大小 btn size
+
+//.btn-kraken 超级巨大小怪兽模式
+.btn-ke{
+  @include button-size($btn-ke-height, $btn-ke-font,$line-height-base, $btn-ke-padding-left, $btn-border-radius-base);
+}

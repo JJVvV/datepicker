@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1442px" height="1442px" viewBox="0 0 1442 1442" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>Article_Welcome_Tile_B (1) Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="396" cy="396" r="396"></circle>
+        <circle id="path-3" cx="396" cy="396" r="396"></circle>
+        <circle id="path-5" cx="396" cy="396" r="396"></circle>
+        <circle id="path-7" cx="396" cy="396" r="396"></circle>
+        <circle id="path-9" cx="396" cy="396" r="396"></circle>
+        <circle id="path-11" cx="396" cy="396" r="396"></circle>
+        <circle id="path-13" cx="396" cy="396" r="396"></circle>
+        <circle id="path-15" cx="396" cy="396" r="396"></circle>
+        <circle id="path-17" cx="396" cy="396" r="396"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Article_Welcome_Tile_B-(1)-Copy" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)">
+            <g id="Layer_1"></g>
+            <g id="Background" fill="#3367D6" sketch:type="MSShapeGroup">
+                <g id="Background_2_">
+                    <rect id="Rectangle-path" x="0" y="0" width="1440" height="1440"></rect>
+                </g>
+            </g>
+            <g id="Artwork">
+                <g id="Group" transform="translate(324.000000, 324.000000)">
+                    <g id="Clipped">
+                        <g>
+                            <mask id="mask-2" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M792,0 L792,396 L396,396 L792,0 Z" id="Shape" opacity="0.76" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                        </g>
+                        <g>
+                            <mask id="mask-4" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M396,0 L792,0 L396,396 L396,0 Z" id="Shape" opacity="0.68" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+                        </g>
+                        <g>
+                            <mask id="mask-6" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M396,396 L0,0 L396,0 L396,396 Z" id="Shape" opacity="0.6" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-6)"></path>
+                        </g>
+                        <g>
+                            <mask id="mask-8" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-7"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M396,396 L0,396 L0,0 L396,396 Z" id="Shape" opacity="0.52" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-8)"></path>
+                        </g>
+                        <g>
+                            <mask id="mask-10" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-9"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M792,792 L396,396 L792,396 L792,792 Z" id="Shape" opacity="0.2" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-10)"></path>
+                        </g>
+                        <g>
+                            <mask id="mask-12" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-11"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M0,792 L0,396 L396,396 L0,792 Z" id="Shape" opacity="0.44" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-12)"></path>
+                        </g>
+                        <g>
+                            <mask id="mask-14" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-13"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M792,792 L396,792 L396,396 L792,792 Z" id="Shape" opacity="0.28" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-14)"></path>
+                        </g>
+                        <g>
+                            <mask id="mask-16" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-15"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M396,792 L0,792 L396,396 L396,792 Z" id="Shape" opacity="0.36" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-16)"></path>
+                        </g>
+                        <g>
+                            <mask id="mask-18" sketch:name="SVGID_1_" fill="white">
+                                <use xlink:href="#path-17"></use>
+                            </mask>
+                            <g id="SVGID_1_"></g>
+                            <path d="M385.3,373.7 C382.8,380.8 380.4,388.6 380.4,397.9 C380.4,418.6 392.9,429.5 403.1,440.9 C373,442.9 316.9,448.6 275.5,473.9 C236,497.4 223.7,531.4 223.7,555.4 C223.7,604.9 270.9,650.5 367.7,650.5 C482.6,650.5 543.8,587.5 543.8,524.8 C543.8,478.5 516.6,455.9 487.3,431.2 L463.2,412.6 C455.9,406.6 443.1,398.6 443.1,383.9 C443.1,369.1 453.3,357.8 461.9,351.2 C490.6,328.9 518.1,305.1 518.1,255.8 C518.1,209.1 490.1,184.5 473.5,170.1 L511.5,170.1 L539.6,142.1 L402.3,142.1 C306.4,142.1 257.4,201.8 257.4,268.1 C257.4,319.3 296.9,374 367.1,374 C372.8,373.7 385.3,373.7 385.3,373.7 L385.3,373.7 Z M398.2,355 C342.6,355 312.3,287.4 312.3,235.9 C312.3,187 341.9,164.2 372.9,164.2 C432.5,164.2 463.3,241.1 463.3,287.2 C463.2,344.1 416.6,355 398.2,355 L398.2,355 Z M400.4,622 C329,622 281.3,587.8 281.3,540.3 C281.3,493 325.5,476.9 340.2,471.6 C368.2,462.2 404.3,461 410.4,461 C417,461 420.3,461 425.6,461.5 C476.4,497.8 497.8,515.7 497.8,549.8 C497.9,587.9 464.4,622 400.4,622 L400.4,622 Z" id="Shape" fill="#5991FC" sketch:type="MSShapeGroup" mask="url(#mask-18)"></path>
+                        </g>
+                    </g>
+                    <path d="M385.3,373.7 C382.8,380.8 380.4,388.6 380.4,397.9 C380.4,418.6 392.9,429.5 403.1,440.9 C373,442.9 316.9,448.6 275.5,473.9 C236,497.4 223.7,531.4 223.7,555.4 C223.7,604.9 270.9,650.5 367.7,650.5 C482.6,650.5 543.8,587.5 543.8,524.8 C543.8,478.5 516.6,455.9 487.3,431.2 L463.2,412.6 C455.9,406.6 443.1,398.6 443.1,383.9 C443.1,369.1 453.3,357.8 461.9,351.2 C490.6,328.9 518.1,305.1 518.1,255.8 C518.1,209.1 490.1,184.5 473.5,170.1 L511.5,170.1 L539.6,142.1 L402.3,142.1 C306.4,142.1 257.4,201.8 257.4,268.1 C257.4,319.3 296.9,374 367.1,374 C372.8,373.7 385.3,373.7 385.3,373.7 L385.3,373.7 Z M398.2,355 C342.6,355 312.3,287.4 312.3,235.9 C312.3,187 341.9,164.2 372.9,164.2 C432.5,164.2 463.3,241.1 463.3,287.2 C463.2,344.1 416.6,355 398.2,355 L398.2,355 Z M400.4,622 C329,622 281.3,587.8 281.3,540.3 C281.3,493 325.5,476.9 340.2,471.6 C368.2,462.2 404.3,461 410.4,461 C417,461 420.3,461 425.6,461.5 C476.4,497.8 497.8,515.7 497.8,549.8 C497.9,587.9 464.4,622 400.4,622 L400.4,622 Z" id="Shape" opacity="0.1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                </g>
+                <g id="Group" stroke="#FFFFFF" stroke-width="1.5" sketch:type="MSShapeGroup">
+                    <path d="M0,466 L1440,466" id="Shape" opacity="0.2"></path>
+                    <path d="M0,975 L1440,975" id="Shape" opacity="0.2"></path>
+                    <path d="M0,0 L1440,1440" id="Shape" opacity="0.2"></path>
+                    <path d="M1440,0 L0,1440" id="Shape" opacity="0.2"></path>
+                    <path d="M846,0 L846,1440" id="Shape" opacity="0.2"></path>
+                    <path d="M594,0 L594,1440" id="Shape" opacity="0.2"></path>
+                    <path d="M1440,846 L0,846" id="Shape" opacity="0.2"></path>
+                    <path d="M1440,594 L0,594" id="Shape" opacity="0.2"></path>
+                    <circle id="Oval" opacity="0.2" cx="720" cy="720" r="180"></circle>
+                    <path d="M0,720 L1440,720" id="Shape" opacity="0.4"></path>
+                    <path d="M720,0 L720,1440" id="Shape" opacity="0.4"></path>
+                    <circle id="Oval" opacity="0.4" cx="720" cy="720" r="396"></circle>
+                    <path d="M1008,378 C1037.2,378 1061,401.8 1061,431 L1061,1007 C1061,1036.2 1037.2,1060 1008,1060 L432,1060 C402.8,1060 379,1036.2 379,1007 L379,431 C379,401.8 402.8,378 432,378 L1008,378 L1008,378 Z" id="Shape" opacity="0.4"></path>
+                    <path d="M954,324 L486,324 C456.3,324 432,348.3 432,378 L432,1062 C432,1091.7 456.3,1116 486,1116 L954,1116 C983.7,1116 1008,1091.7 1008,1062 L1008,378 C1008,348.3 983.7,324 954,324 L954,324 Z" id="Shape" opacity="0.4"></path>
+                    <path d="M1062,432 L378,432 C348.3,432 324,456.3 324,486 L324,954 C324,983.7 348.3,1008 378,1008 L1062,1008 C1091.7,1008 1116,983.7 1116,954 L1116,486 C1116,456.3 1091.7,432 1062,432 L1062,432 Z" id="Shape" opacity="0.4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

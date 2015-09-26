@@ -1,0 +1,42 @@
+// Button sizes
+@mixin button-size($height, $font-size, $line-height,  $padding-horizontal,  $border-radius) {
+
+
+  font-size: $font-size;
+  border-radius: $border-radius;
+  line-height: ($height - 2px);//get-btn-padding($height, $font-size, $line-height)
+  padding: 0 $padding-horizontal;
+}
+
+@mixin button-variant($color, $background, $border, $hover-color, $hover-background) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:focus,
+  &.focus,
+  &:hover,
+  &:active,
+  &.active
+  {
+    background:rgba($hover-background, 0.8);
+    color:$hover-color;
+    border-color: rgba($hover-background, 0.1);
+  }
+
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background;
+      border-color: $border;
+    }
+  }
+
+}
