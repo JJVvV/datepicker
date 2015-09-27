@@ -96,18 +96,25 @@ export default class Calendar extends React.Component{
         return minute<0 ? minute+60 : minute>=60 ? minute - 60 : minute;
     }
 
+    componentDidUpdate(){
+        React.findDOMNode(this.refs.hour).value = this.hour;
+        React.findDOMNode(this.refs.minute).value = this.minute;
+    }
+
     generateHourList(hour){
         let li1 = ::this.regulateHour(hour-2);
         let li2 = ::this.regulateHour(hour-1);
         let li3 = ::this.regulateHour(hour+1);
         let li4 = ::this.regulateHour(hour+2);
         let nowHour= ::this.regulateHour(hour);
+        this.hour = nowHour;
+
         return (
             <ul>
                 <li><i className="demo-icon icon-glyph-141" onClick={this.subtractHour.bind(this, hour)}></i></li>
                 <li onClick={::this.selectHour.bind(this, li1)}>{li1>9 ? li1 : "0" + li1}</li>
                 <li onClick={::this.selectHour.bind(this, li2)}>{li2>9 ? li2 : "0" + li2}</li>
-                <li><input className="form-c input-box" type="text" value={nowHour>9 ? nowHour : "0" + nowHour} /></li>
+                <li><input ref="hour" className="form-c input-box" type="text" defaultValue={nowHour>9 ? nowHour : "0" + nowHour} onBlur={::this.hourBlur} /></li>
                 <li onClick={::this.selectHour.bind(this, li3)}>{li3>9 ? li3 : "0" + li3}</li>
                 <li onClick={::this.selectHour.bind(this, li4)}>{li4>9 ? li4 : "0" + li4}</li>
                 <li><i className="demo-icon icon-glyph-142" onClick={this.addHour.bind(this, hour)}></i></li>
@@ -115,18 +122,45 @@ export default class Calendar extends React.Component{
         );
     }
 
+    hourBlur(e){
+        let hour = parseInt(e.target.value);
+        if(isNaN(hour)){
+            hour = 0;
+        }else if(hour> 23){
+            hour = 23
+        }else if(hour < 0){
+            hour = 0
+        }
+        this.selectHour(hour);
+    }
+
+    minuteBlur(e){
+        let minute = parseInt(e.target.value);
+        if(isNaN(minute)){
+            minute = 0;
+        }else if(minute> 59){
+            minute = 59
+        }else if(minute < 0){
+            minute = 0
+        }
+        this.selectMinute(minute);
+    }
+
+
+
     generateMinuteList(minute){
         let li1 = ::this.regulateMinute(minute-2);
         let li2 = ::this.regulateMinute(minute-1);
         let li3 = ::this.regulateMinute(minute+1);
         let li4 = ::this.regulateMinute(minute+2);
         let nowMinute= ::this.regulateMinute(minute);
+        this.minute = nowMinute;
         return (
             <ul>
                 <li><i className="demo-icon icon-glyph-141" onClick={this.subtractMinute.bind(this, minute)}></i></li>
                 <li onClick={this.selectMinute.bind(this, li1)}>{li1>9 ? li1 : "0" + li1}</li>
                 <li onClick={this.selectMinute.bind(this, li2)}>{li2>9 ? li2 : "0" + li2}</li>
-                <li><input className="form-c input-box" type="text" value={nowMinute>9 ? nowMinute : "0" + nowMinute} /></li>
+                <li><input ref="minute" className="form-c input-box" type="text" defaultValue={nowMinute>9 ? nowMinute : "0" + nowMinute} onBlur={::this.minuteBlur} /></li>
                 <li onClick={this.selectMinute.bind(this, li3)}>{li3>9 ? li3 : "0" + li3}</li>
                 <li onClick={this.selectMinute.bind(this, li4)}>{li4>9 ? li4 : "0" + li4}</li>
                 <li><i className="demo-icon icon-glyph-142" onClick={this.addMinute.bind(this, minute)}></i></li>

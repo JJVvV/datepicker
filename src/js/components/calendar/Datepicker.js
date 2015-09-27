@@ -96,6 +96,17 @@ export default class Datepicker extends React.Component{
         });
     }
 
+    onBlur(e){
+        if(moment(e.target.value, this.getDateFormat()).isValid()){
+
+        }
+    }
+
+
+    getDateFormat(){
+        return this.props.allDay ? this.props.dateFormatAllDay : this.props.dateFormatNotAllDay
+    }
+
     render(){
         //console.log('this.state.selected', this.state.selected);
         return (
@@ -109,6 +120,7 @@ export default class Datepicker extends React.Component{
                     focus={this.state.focus}
                     setPosition = {::this.setPosition}
                     //onFocus={this.handleFocus}
+                    dateFormat={this.getDateFormat()}
                     allDay={this.props.allDay}
                     hide={::this.hide}
                     handleClick={::this.onInputClick}
@@ -123,6 +135,7 @@ export default class Datepicker extends React.Component{
                     readOnly={this.props.readOnly}
                     required={this.props.required}
                     onChange={::this.props.onChange}
+                    onBlur={::this.onBlur}
                 />
                 {this.calendar()}
             </div>

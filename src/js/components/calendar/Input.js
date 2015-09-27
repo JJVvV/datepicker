@@ -15,8 +15,7 @@ export default class Input extends React.Component{
 
         dateFormat:'',
         className: "datepicker__input",
-        onBlur: function() {},
-        allDay: false
+        onBlur: function() {}
     }
 
 
@@ -24,12 +23,9 @@ export default class Input extends React.Component{
         super(props);
 
     }
-    getDateFormat(){
-        return this.props.allDay ? this.props.dateFormatAllDay : this.props.dateFormatNotAllDay
-    }
-    formatValue(){
-        return  moment(+this.props.date).format(this.getDateFormat());
 
+    formatValue(){
+        return  moment(+this.props.date).format(this.props.dateFormat);
     }
 
     cancelBubble(e){
@@ -47,9 +43,7 @@ export default class Input extends React.Component{
         this.input = React.findDOMNode(this.refs.input);
         this.input.addEventListener('click', ::this.cancelBubble);
         this.$input = $(this.input);
-        //this.setPosition();
-        //this.input.addEventListener('input', this.oninput);
-        //this.input.addEventListener('propertychange', this.oninput);
+
     }
 
     setPosition(){
@@ -64,7 +58,10 @@ export default class Input extends React.Component{
 
     }
 
+    onChange(e){
 
+
+    }
 
     handleClick(...args){
         this.setPosition();
@@ -89,6 +86,7 @@ export default class Input extends React.Component{
             //onInput={this.handleChange}
             //disabled={this.props.disabled}
             placeholder={this.props.placeholderText}
+            onChange={this.onChange}
             //readOnly={this.props.readOnly}
             //required={this.props.required}
         />;
