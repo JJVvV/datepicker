@@ -97,8 +97,10 @@ export default class Calendar extends React.Component{
     }
 
     componentDidUpdate(){
-        React.findDOMNode(this.refs.hour).value = this.hour;
-        React.findDOMNode(this.refs.minute).value = this.minute;
+        let hour = this.hour < 10 ? '0'+ this.hour : this.hour;
+        let minute = this.minute < 10 ? '0'+ this.minute : this.minute;
+        React.findDOMNode(this.refs.hour).value = hour;
+        React.findDOMNode(this.refs.minute).value = minute;
     }
 
     generateHourList(hour){
