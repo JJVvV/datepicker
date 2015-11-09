@@ -56,6 +56,9 @@ export default class Calendar extends React.Component{
         });
     }
 
+    componentWillUnmount(){
+        window.addEventListener('resize', this.setPosition);
+    }
     subtractMinute(minute){
 
 
@@ -222,11 +225,16 @@ export default class Calendar extends React.Component{
         this.calendar = React.findDOMNode(this.refs.calendar);
 
 
-        let input = React.findDOMNode(this.props.root.refs.input);
-        this.setPosition(input);
+
+        this.setPosition = ::this.setPosition;
+
+        window.addEventListener('resize', this.setPosition);
+        this.setPosition();
     }
 
     setPosition(input){
+        input = React.findDOMNode(this.props.root.refs.input);
+        if(!input) return;
         let left = offset.left(input),
             top = offset.top(input),
             offsetHeight = this.calendar.offsetHeight,
@@ -255,6 +263,8 @@ export default class Calendar extends React.Component{
 
         this.calendar.style.top = top + 'px';
         this.calendar.style.left = left + 'px';
+        this.calendar.classList.remove('opensright');
+        this.calendar.classList.remove('openstop');
         this.calendar.classList.add(opensleft ? 'opensleft': 'opensright');
         this.calendar.classList.add(opensbottom ? 'opensbottom' : 'openstop');
     }
