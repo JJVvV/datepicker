@@ -1,9 +1,14 @@
-# datepicker
+# [React](http://facebook.github.io/react/)-Datepicker
 
+##How to use
 npm install
 
 npm start
 
 gulp
 
-Now, open the  [http://localhost:3003](http://localhost:3003)
+
+
+[Live demo](http://jjvvv.github.io/datepicker/datepicker.html) .
+
+
