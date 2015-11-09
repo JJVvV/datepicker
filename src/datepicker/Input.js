@@ -3,14 +3,9 @@
  */
 import React, {PropTypes} from 'react';
 import classnames  from 'classnames';
-import PubSub from 'pubsub-js';
-import {CHANGE_SLIDER, SLIDER_ACTIVE, S} from '../../constants/launchr.js';
-import {sliderShow} from '../../services/slider.js';
 import moment from 'moment';
-import $ from 'jquery';
 
-const C_HEIGHT = 260;
-const C_HEIGHT_NOT_ALLDAY = 300;
+
 
 export default class Input extends React.Component{
 
@@ -51,7 +46,6 @@ export default class Input extends React.Component{
     }
     componentDidMount(){
         this.input = React.findDOMNode(this.refs.input);
-        this.$input = $(this.input);
 
     }
 

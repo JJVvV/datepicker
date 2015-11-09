@@ -36,7 +36,7 @@ module.exports = {
         loader: 'babel',
         include: path.join(__dirname, 'src'),
         query:{
-          optional: ['runtime'],
+          optional: ['runtime', 'es7'],
           blacklist:["strict"]
         }
       }
