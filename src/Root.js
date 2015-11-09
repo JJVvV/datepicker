@@ -87,7 +87,6 @@ export default class ApplicationPage extends React.Component{
            />
 
            <p>icon: false</p>
-
            <Datepicker
                date="2015-10-9"
                initShowDate={false}
