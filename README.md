@@ -9,6 +9,6 @@ gulp
 
 
 
-[Live demo](http://jjvvv.github.io/datepicker/datepicker.html) .
+[Live demo](http://jjvvv.github.io/datepicker/index.html) .
 
 
