@@ -1,0 +1,157 @@
+
+$blue-base: #0099ff !default;
+
+
+.datepicker{
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  z-index:300;
+  position:absolute;
+  white-space: nowrap;
+  line-height:1.4;
+  font-family:sans-serif;
+  background:#fff;
+
+  .icon{
+    cursor:pointer;
+    font-size:24px;
+    padding: 0 3px;
+  }
+
+  &:before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    left: 15px;
+    top: -5px;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    transform: rotate(45deg);
+  }
+  &.opensright:before{
+    left:auto;
+    right:15px;
+  }
+
+  &.openstop:before{
+    top:auto;
+    bottom:-5px;
+  }
+}
+
+.datepicker-date{
+  padding: 0 12px;
+}
+.datepicker-timer{
+
+
+  border-left: 1px solid #e3e7ea;
+  padding: 0 15px;
+  display:inline-block;
+
+
+}
+
+.datepicker-inner{
+  position:relative;
+  z-index:1;
+  background:#fff;
+}
+.datepicker-date{
+  display:inline-block;
+  vertical-align: top;
+
+  table{
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  td{
+    font-size:12px;
+    .num{
+      display:inline-block;
+      cursor:pointer;
+      margin:5px;
+      width: 20px;
+      line-height:20px;
+      text-align: center;
+      border-radius: 3px;
+    }
+
+    &.active, .active:hover{
+      .num{
+        background-color: #0099ff;
+        border-color: #0099ff;
+        color: #fff;
+      }
+    }
+  }
+  thead th{
+    padding:5px 0;
+  }
+  th.month{
+    text-align:center;
+    font-weight:normal;
+  }
+}
+
+%datepicker-timer-line{
+  width:60px;
+  display:inline-block;
+  text-align:center;
+  ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  li{
+    cursor:pointer;
+    margin:5px 0;
+
+  }
+  input[type=text]{
+    width:43px;
+    font-size:22px;
+    line-height:1.4;
+    padding: 0;
+    text-align:center;
+    color:$blue-base;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+.datepicker-timer-hour{
+  @extend %datepicker-timer-line;
+  .hour{
+    &.hour:after{
+      content: ':';
+      display:inline-block;
+      position:relative;
+      left:5px;
+      top:-4px;
+    }
+  }
+
+}
+.datepicker-timer-minute{
+  @extend %datepicker-timer-line;
+}
+
+.form-c {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #56646d;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e3e7ea;
+  border-radius: 5px;
+  outline: 0;
+  padding: 9px 12px;
+  width: 100%;
+  box-sizing: border-box;
+}

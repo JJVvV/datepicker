@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5704db7-3f16-4b65-9bcd-370a8dafe15e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Root.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/datepicker/Calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/main/_c_datepicker.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/Article_Welcome_Header_1440-1be22a2f.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/Calendar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/_main-compass.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/_test.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/lib/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/lib/daterangepicker.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/lib/fullcalendar-for-launchr.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/lib/fullcalendar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/lib/pikaday.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/lib/webuploader.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/lib/webuploader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_animation.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_approval_area.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_approval_submit.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_bubble.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_button.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_button_group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_calendar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_calendar_area.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_calendar_createMeeting.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_calendar_place.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_calendar_reason.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_calendar_slide.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_chat_area.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_chat_area_box.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_chat_face_panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_chat_message_record.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_chat_messages.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_chat_room.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_chat_send.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_choose_people_box.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_emotion.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_flower.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_global_panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_more_detail.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_register_area.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_scrollable.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_slider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_sub_panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_task_tag.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_thread_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_thread_search.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_c_tree.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_extend.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_family.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_icon_fontello.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_icon_simple.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_layout.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_state.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/mixins/_bubble.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/mixins/_button.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/mixins/_common.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/mixins/_form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/mixins/_global_panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/mixins/_panel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/styles/main/mixins/_tab-focus.scss" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/Datepicker.js" afterPath="$PROJECT_DIR$/src/datepicker/Datepicker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/Input.js" afterPath="$PROJECT_DIR$/src/datepicker/Input.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/Pop.js" afterPath="$PROJECT_DIR$/src/datepicker/Pop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
+    </list>
+    <ignored path="datepicker.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="datepicker" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Calendar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/datepicker/Calendar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Datepicker.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/datepicker/Datepicker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.8">
+              <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_c_datepicker.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/main/_c_datepicker.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Root.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Root.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/styles/main.scss" />
+        <option value="$PROJECT_DIR$/src/datepicker/Calendar.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="161" />
+    <option name="y" value="53" />
+    <option name="width" value="1258" />
+    <option name="height" value="703" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datepicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datepicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datepicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datepicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datepicker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/styles/main" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/js" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5704db7-3f16-4b65-9bcd-370a8dafe15e" name="Default" comment="" />
+      <created>1447067980825</created>
+      <option name="number" value="Default" />
+      <updated>1447067980825</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="161" y="53" width="1258" height="703" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2497979" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5562806" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Root.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/main/_c_datepicker.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datepicker/Calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datepicker/Datepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,14 +1,14 @@
 {
   "name": "Launchr",
   "version": "1.0.0",
-  "description": "Launchr which is a SPA with react and Redux",
+  "description": "a react datepicker",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JJVvV/launchr.git"
+    "url": "https://github.com/JJVvV/datepicker.git"
   },
   "keywords": [
     "react",
@@ -55,37 +55,8 @@
     "webpack-stream": "^2.0.0"
   },
   "dependencies": {
-    "body-parser": "^1.13.1",
-    "bootstrap-daterangepicker": "^2.0.6",
-    "boron": "^0.1.2",
     "classnames": "^2.1.3",
-    "es6-promise": "^2.3.0",
-    "fullcalendar": "^2.3.1",
-    "gulp": "^3.9.0",
-    "immutable": "^3.7.4",
-    "isomorphic-fetch": "^2.1.1",
-    "jquery": "^2.1.4",
-    "js-base64": "^2.1.9",
-    "js-cookie": "^2.0.3",
-    "jsonwebtoken": "^5.0.2",
-    "lodash": "3.9.3",
     "moment": "^2.10.3",
-    "morgan": "^1.6.0",
-    "multer": "^1.0.1",
-    "object-assign": "^3.0.0",
-    "pikaday": "^1.3.3",
-    "pubsub-js": "^1.5.2",
-    "react": "^0.13.0",
-    "react-dnd": "~1.1.8",
-    "react-google-maps": "^2.1.0",
-    "react-kit": "^0.1.6",
-    "react-redux": "^0.9.0",
-    "react-router": "1.0.0-beta3",
-    "redux": "^1.0",
-    "redux-thunk": "^0.1.0",
-    "reflux": "^0.2.7",
-    "reqwest": "^1.1.5",
-    "superagent": "1.2.0",
-    "when": "^3.7.3"
+    "react": "^0.13.0"
   }
 }
