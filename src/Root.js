@@ -22,7 +22,7 @@ export default class ApplicationPage extends React.Component{
 
   render(){
     return (
-       <div className="test" style={{marginLeft: '200px', width: 800}}>
+       <div className="test">
            <p>default</p>
            <Datepicker />
 
