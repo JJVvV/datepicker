@@ -139,12 +139,18 @@ export default class Calendar extends React.Component{
                 <li><i className="icon icon-angle-up" onClick={this.subtractHour.bind(this, hour)}></i></li>
                 <li onClick={::this.selectHour.bind(this, li1)}>{li1>9 ? li1 : "0" + li1}</li>
                 <li onClick={::this.selectHour.bind(this, li2)}>{li2>9 ? li2 : "0" + li2}</li>
-                <li className="hour"><input ref="hour" className="form-c input-box" type="text" defaultValue={nowHour>9 ? nowHour : "0" + nowHour} onBlur={::this.hourBlur} /></li>
+                <li className="hour"><input ref="hour" className="form-c input-box" type="text" defaultValue={nowHour>9 ? nowHour : "0" + nowHour} onBlur={::this.hourBlur} onKeyUp={::this.keyUpSure} /></li>
                 <li onClick={::this.selectHour.bind(this, li3)}>{li3>9 ? li3 : "0" + li3}</li>
                 <li onClick={::this.selectHour.bind(this, li4)}>{li4>9 ? li4 : "0" + li4}</li>
                 <li><i className="icon icon-angle-down" onClick={this.addHour.bind(this, hour)}></i></li>
             </ul>
         );
+    }
+
+    keyUpSure(e){
+        if(e.which === 13){
+            this.hourBlur(e);
+        }
     }
 
     hourBlur(e){
@@ -185,7 +191,7 @@ export default class Calendar extends React.Component{
                 <li><i className="icon icon-angle-up" onClick={this.subtractMinute.bind(this, minute)}></i></li>
                 <li onClick={this.selectMinute.bind(this, li1)}>{li1>9 ? li1 : "0" + li1}</li>
                 <li onClick={this.selectMinute.bind(this, li2)}>{li2>9 ? li2 : "0" + li2}</li>
-                <li><input ref="minute" className="form-c input-box" type="text" defaultValue={nowMinute>9 ? nowMinute : "0" + nowMinute} onBlur={::this.minuteBlur} /></li>
+                <li><input ref="minute" className="form-c input-box" type="text" defaultValue={nowMinute>9 ? nowMinute : "0" + nowMinute} onBlur={::this.minuteBlur} onKeyUp={::this.keyUpSure} /></li>
                 <li onClick={this.selectMinute.bind(this, li3)}>{li3>9 ? li3 : "0" + li3}</li>
                 <li onClick={this.selectMinute.bind(this, li4)}>{li4>9 ? li4 : "0" + li4}</li>
                 <li><i className="icon icon-angle-down" onClick={this.addMinute.bind(this, minute)}></i></li>
@@ -397,19 +403,21 @@ export default class Calendar extends React.Component{
 
             if(minDate && maxDate){
 
-                enableDay = minDate.sameDay(maxDate) ?
-                    minDate.sameDay(list[i]) :
-                    minDate < maxDate ? ((minDate < list[i] || list[i].sameDay(minDate)) && (maxDate > list[i] || list[i].sameDay(maxDate))): (list[i]>minDate || minDate.sameDay(list[i]));
+                enableDay = (minDate.isBefore(list[i]) && list[i].isBefore(maxDate)) || (this.isSameDay(list[i], minDate));
+                if(minDate.isAfter(maxDate)){
+                    console.warn('minDate is bigger than maxDate');
+                }
+
 
             }else if(minDate){
-                enableDay = (list[i] > minDate || list[i].sameDay(minDate))
+                enableDay = (list[i].isAfter(minDate) || this.isSameDay(list[i], minDate))
             }else if(maxDate){
-                enableDay = (list[i] < maxDate || list[i].sameDay(maxDate))
+                enableDay = (list[i].isBefore(maxDate) || this.isSameDay(list[i], maxDate))
             }else{
                 enableDay = true;
             }
             disabledDates.forEach((day) => {
-                if(day.sameDay(list[i])){
+                if(this.isSameDay(day, list[i])){
                     enableDay = false;
                 }
             });

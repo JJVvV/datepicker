@@ -1,6 +1,21 @@
 
 $blue-base: #0099ff !default;
 
+.input-container.has-icon{
+  position:relative;
+
+  .form-c{
+    padding-left:33px;
+  }
+
+  .feedback{
+    position:absolute;
+    left: 0;
+    padding: 8px 0 8px 8px;
+    color: #666;
+    font-size: 22px;
+  }
+}
 
 .datepicker{
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -80,6 +95,15 @@ $blue-base: #0099ff !default;
       line-height:20px;
       text-align: center;
       border-radius: 3px;
+    }
+
+
+    &.off{
+      .num{
+        color: #bec6d3;
+        background: #fff;
+        cursor:default;
+      }
     }
 
     &.active, .active:hover{

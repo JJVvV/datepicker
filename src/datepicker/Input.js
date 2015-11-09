@@ -12,7 +12,6 @@ export default class Input extends React.Component{
     static defaultProps = {
 
         dateFormat:'',
-        className: "datepicker__input",
         onBlur: function() {},
         onKeyDown: () => {
 

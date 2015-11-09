@@ -4,7 +4,8 @@
   "description": "a react datepicker",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "jsp": "webpack -p  --config webpack.config.production.js"
   },
   "repository": {
     "type": "git",

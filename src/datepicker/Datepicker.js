@@ -7,6 +7,7 @@
 
 
 import React, {PropTypes} from 'react';
+import classnames from 'classnames';
 import moment from 'moment';
 import Popover from './Pop.js';
 import Calendar from './Calendar.js';
@@ -15,7 +16,7 @@ import Input from './Input.js';
 export default class Datepicker extends React.Component{
 
     static defaultProps = {
-        dateFormat: "YYYY-MM-DD",
+        //dateFormat: "YYYY-MM-DD",
         className: "datepicker__input",
         dateFormatAllDay: "YYYY-MM-DD",
         dateFormatNotAllDay: "YYYY-MM-DD H:mm",
@@ -28,14 +29,14 @@ export default class Datepicker extends React.Component{
         disabledDates: [],
         icon: true,
         onChange: () => {},
-        initShowDate: true
+        initShowDate: true,
+        className: 'form-c'
     }
 
 
     state = {
-        focus:false,
-        date: moment(this.props.initShowDate ?(this.props.date || new Date()) : this.props.date),
-        position:{}
+        focus: false,
+        date: moment(this.props.initShowDate ? (this.props.date || new Date()) : '')
     }
 
     constructor(props){
@@ -80,21 +81,19 @@ export default class Datepicker extends React.Component{
                         ref="calendar"
                         weekdays={this.props.weekdays}
                         locale={this.props.locale}
-                        position={this.state.position}
                         moment={this.props.moment}
                         dateFormat={this.props.dateFormatCalendar}
 
                         date={this.state.date}
                         onSelect={::this.onSelect}
                         hideCalendar={this.hideCalendar}
-                        minDate={this.props.minDate}
                         maxDate={this.props.maxDate}
                         excludeDates={this.props.excludeDates}
                         allDay = {this.props.allDay}
                         weekStart={this.props.weekStart}
-                        minDate={this.props.minDate}
-                        maxDate={this.props.maxDate}
-                        disabledDates={this.props.disabledDates}
+                        minDate={this.toMoment(this.props.minDate)}
+                        maxDate={this.toMoment(this.props.maxDate)}
+                        disabledDates={this.toMoment(this.props.disabledDates)}
                         root={this}
                         />
                 </Popover>
@@ -102,6 +101,14 @@ export default class Datepicker extends React.Component{
         }
     }
 
+    toMoment(date){
+        if(Array.isArray(date)){
+            return date.map((item) => {return this.toMoment(item)});
+        }
+        if(date && !moment.isMoment(date)){
+            return moment(date);
+        }
+    }
 
     onBlur(e){
         if(moment(e.target.value, this.getDateFormat()).isValid()){
@@ -117,16 +124,12 @@ export default class Datepicker extends React.Component{
     render(){
 
         return (
-            <div className="datepicker-container" ref="container">
+            <div className={classnames('input-container', {'has-icon': this.props.icon})} ref="container">
                 <Input
                     ref="input"
                     name={this.props.name}
                     date={this.state.date}
-                    dateFormat={this.props.dateFormat}
-                    dateFormatAllDay={this.props.dateFormatAllDay}
-                    dateFormatNotAllDay={this.props.dateFormatNotAllDay}
                     focus={this.state.focus}
-
                     dateFormat={this.getDateFormat()}
                     allDay={this.props.allDay}
                     hide={::this.hide}
@@ -148,7 +151,7 @@ export default class Datepicker extends React.Component{
 
                     //onKeyDown={::}
                 />
-                {this.props.icon && <span className="feedback  icon-glyph-89" onClick={::this.focus}></span>}
+                {this.props.icon && <span className="feedback icon-calendar" onClick={::this.focus}></span>}
                 {this.calendar()}
 
             </div>
