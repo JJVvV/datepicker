@@ -16,13 +16,11 @@ import Input from './Input.js';
 export default class Datepicker extends React.Component{
 
     static defaultProps = {
-        //dateFormat: "YYYY-MM-DD",
         className: "datepicker__input",
-        dateFormatAllDay: "YYYY-MM-DD",
-        dateFormatNotAllDay: "YYYY-MM-DD H:mm",
-
+        //dateFormatAllDay: "YYYY-MM-DD",
+        //dateFormatNotAllDay: "YYYY-MM-DD H:mm",
+        dateFormat: 'YYYY-MM-DD H:mm',
         onBlur: function() {},
-        allDay:false,
         date: '', // '' || new Date() || moment();
         minDate:null,
         maxDate: null,
@@ -48,7 +46,9 @@ export default class Datepicker extends React.Component{
 
     }
 
-
+    isAllDay(day){
+        return !/h|H|m/g.test(day)
+    }
 
     onInputClick(){
 
@@ -80,17 +80,11 @@ export default class Datepicker extends React.Component{
                     <Calendar
                         ref="calendar"
                         weekdays={this.props.weekdays}
-                        locale={this.props.locale}
-                        moment={this.props.moment}
-                        dateFormat={this.props.dateFormatCalendar}
-
                         date={this.state.date}
                         onSelect={::this.onSelect}
                         hideCalendar={this.hideCalendar}
                         maxDate={this.props.maxDate}
-                        excludeDates={this.props.excludeDates}
-                        allDay = {this.props.allDay}
-                        weekStart={this.props.weekStart}
+                        allDay = {this.isAllDay(this.props.dateFormat)}
                         minDate={this.toMoment(this.props.minDate)}
                         maxDate={this.toMoment(this.props.maxDate)}
                         disabledDates={this.toMoment(this.props.disabledDates)}
@@ -130,8 +124,7 @@ export default class Datepicker extends React.Component{
                     name={this.props.name}
                     date={this.state.date}
                     focus={this.state.focus}
-                    dateFormat={this.getDateFormat()}
-                    allDay={this.props.allDay}
+                    dateFormat={this.props.dateFormat}
                     hide={::this.hide}
                     handleClick={::this.onInputClick}
                     setSelected={this.setSelected}
