@@ -1,2 +1,5 @@
-# datepicker 
-# datepicker 
+# datepicker
+
+npm install
+npm start
+gulp
